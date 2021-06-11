@@ -6,12 +6,15 @@ module.exports = function(app) {
          extended: true
       }));
      
-     app.get('/',function(req,res){
-        res.render('index.html')
-     });
-     app.get('/about',function(req,res){
-        res.render('about.html');
-    });
+      app.get('/',function(req,res){
+         res.render('index.html')
+      });
+      app.get('/about',function(req,res){
+         res.render('about.html');
+      });
+      app.get('/aboutA',function(req,res){
+         res.render('aboutA.html');
+      });
      
     app.get('/listall', function (req, res) {
       //res.render('about.html');
